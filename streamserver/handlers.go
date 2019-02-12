@@ -17,7 +17,7 @@ func helloHandler(rw http.ResponseWriter, req *http.Request, p httprouter.Params
 }
 
 func testPageHandler(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	t, err := template.ParseFiles("./html/upload.html")
+	t, err := template.ParseFiles("./templates/upload.html")
 	if err != nil {
 		log.Println(err)
 	}
